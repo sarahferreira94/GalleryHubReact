@@ -19,7 +19,7 @@ const Login = ({ onLogin }) => {
     const config = {
       headers: {
           Accept: 'application/json',
-          Authorization: `Bearer ${ window.sessionStorage.getItem( 'token' ) }`,
+          Authorization: `Bearer ${ localStorage.getItem( 'token' ) }`,
       },
     };
 
@@ -37,6 +37,8 @@ const Login = ({ onLogin }) => {
     } );
   };
 
+
+  
   return (
     <div className='loginCenter'>
       <div className='loginContainer'>

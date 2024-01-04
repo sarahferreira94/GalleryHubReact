@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import HeaderComponent from './components/Header';
 import FooterComponent from './components/Footer';
@@ -29,6 +29,13 @@ function App() {
   const PublicRoute = ({ element }) => {
     return !user ? element : <Navigate to="/home" />;
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setUser({ loggedIn: true, token });
+    }
+  }, []);
 
   return (
     <Router>
