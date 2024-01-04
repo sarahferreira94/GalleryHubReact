@@ -1,0 +1,116 @@
+
+:root {
+    --primary-color: #404040;
+    --secondary-color: #ffffff; 
+    --anchor-text-color: #7e665e;
+    
+    --background-primary: rgba(255, 255, 255, 0.4);
+    --background-secondary: rgba(64, 64, 64, 0.71);
+    --backdrop-blur: blur(5px);
+}
+
+body {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: var(--primary-color);
+    background-image: url('../../src/images/bgGalleryHub.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.bodyStyle {
+    color: white;
+}
+
+.headerStyle {
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;  
+    /* background: white; */
+    background-color: var(--background-primary);
+    backdrop-filter: var(--backdrop-blur);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerItem {
+    display: flex;  
+}
+
+.headerStyle img,
+.headerStyle Button {
+    max-height: 5em;
+    padding: 0px 3em;    
+}
+
+.loginCenter, 
+.signCenter {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+
+.loginContainer, 
+.signContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    height: 50vh;
+    background-color: var(--background-primary);
+    backdrop-filter: var(--backdrop-blur);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.loginBox, 
+.signBox {
+    text-align: center;
+}
+
+.loginBox img,
+.signBox img {
+    max-height: 8em;
+    margin: 2em auto 3em;
+}
+
+.loginItems, 
+.signItems {
+    margin-bottom: 2em;
+}
+
+.loginItemSignup, 
+.signItemLogin {
+    margin-top: 1em;
+}
+
+.footerStyle {
+    background-color: var(--background-secondary);
+    backdrop-filter: var(--backdrop-blur);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+}
+
+.footerStyle img {
+    height: 2em;
+    margin: 0.5em;
+}
+
+.anchorNavigation {
+    text-decoration: none;
+    color: var(--anchor-text-color);
+}

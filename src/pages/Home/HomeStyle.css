@@ -1,0 +1,14 @@
+.homeContainer {
+    width: 95%;
+    max-height: 70vh;
+    background-color: var(--background-primary);
+    backdrop-filter: var(--backdrop-blur);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 7.5em auto;
+}
+
+.tableArtwork {
+    height: 400;
+    width: 100%;
+}
